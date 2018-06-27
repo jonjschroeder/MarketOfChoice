@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <!-- <PackageTargetFallback>net461</PackageTargetFallback> -->
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helpers\Numbers.cs" />
+    <Compile Remove="Models\Customers.cs" />
+  </ItemGroup>
+
+<ItemGroup>
+  <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+</ItemGroup>
+
+<ItemGroup>
+  <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+  <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+  <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+</ItemGroup>
+
+</Project>
